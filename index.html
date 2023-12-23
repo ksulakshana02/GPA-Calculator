@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="gpa">
+            <h1>GPA Calculator</h1>
+            <div class="details">
+                <div class="row">
+                    <input type="text" placeholder="Subject" class="subject">
+                    <label>Grade:</label>
+                    <select name="grade" id="sele" class="grade">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                    </select>
+                    <label>Credit:</label>
+                    <select name="credit" class="credit">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="addSubject()">Add Subject</button>
+                <button onclick="calGpa()">Calculate</button>
+            </div>
+            <div class="result">
+                <div class="credit-total">
+                    <h2>Credits Total</h2>
+                    <div class="credit-amount">00</div>
+                </div>
+                <div class="gpa-total">
+                    <h2>Your GPA</h2>
+                    <div class="gpa-amount">0.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="image/linkedin.png" alt="...">
+            <a href="https://www.linkedin.com/in/ksulakshana/" target="_blank">@kSulakshana</a>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
