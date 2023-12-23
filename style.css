@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -10,7 +10,7 @@ body {
     color: #002339;
 }
 
-.gpa{
+.gpa {
     width: 100%;
     max-width: 540px;
     background: #fff;
@@ -34,7 +34,7 @@ h1 {
     align-items: center;
     margin-bottom: 25px;
 
-    
+
 }
 
 input , select {
@@ -53,7 +53,7 @@ label {
     margin: 10px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +70,7 @@ button {
     background: #002339;
 }
 
-button:hover{
+button:hover {
     background: #004068;
 }
 
@@ -112,7 +112,48 @@ h2 {
     margin-right: 2px;
 
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
     color: #ebfffc;
+}
+
+@media (max-width: 600px) {
+    .gpa {
+        width: 75%;
+        max-width: 540px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+
+    }
+
+    .row {
+        flex-direction: column;
+        margin-bottom: 20px;
+
+    }
+
+    input,
+    select {
+        border-radius: 20px;
+        width: 80%;
+        text-align: center;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 12px 30px;
+        margin: 2px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
 }
